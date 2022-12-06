@@ -33,6 +33,8 @@ public class GameController : MonoBehaviour {
 
         if (obj.transform.position.z <= -13f)
         {
+            // si la barerra paso la posición del jugador, te suma puntos. y destruye la barrera, y la duplica devuelta 
+            //(le cambia la posición)
             Debug.Log("E: OBJ Destoy");
             score++;
             points.text = "Puntaje " + score.ToString();
